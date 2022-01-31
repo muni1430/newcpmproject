@@ -28,4 +28,4 @@ resource "aws_db_instance" "default" {
   vpc_security_group_ids = ["sg-01361c1aff01f515a"]
 }
 
-}
+
