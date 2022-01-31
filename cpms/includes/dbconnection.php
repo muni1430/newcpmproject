@@ -1,9 +1,9 @@
 <?php 
 // DB credentials.
-define('DB_HOST','localhost');
+define('DB_HOST','terraform-20220131050116881300000001.cxnn8acptt6e.us-east-1.rds.amazonaws.com:3306');
 define('DB_USER','admin');
 define('DB_PASS','muni1234');
-define('DB_NAME','cpms');
+define('DB_NAME','terraform-20220131050116881300000001');
 // Establish database connection.
 try
 {
