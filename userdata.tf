@@ -13,9 +13,7 @@ sudo /opt/lampp/lampp start
 sudo rm -rf /opt/lampp/htdocs/*
 sudo chmod 777 /opt/lampp/htdocs
 sudo git clone https://github.com/muni1430/newcpmproject.git
-
-sudo cp -r newcpmproject/cpms/SQL File/cpms/* /opt/lampp/htdocs
-
+sudo cp -r newcpmproject/cpms/includes/dbconnection.php/cpms/* /opt/lampp/htdocs
 sudo chmod 777 /opt/lampp/htdocs/includes/dbconnection.php
 sudo sed -i.bak 's/localhost/${endpoint}/g' /opt/lampp/htdocs/includes/dbconnection.php
 sudo sed -i 's/password/${password}/g' /opt/lampp/htdocs/includes/dbconnection.php
