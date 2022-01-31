@@ -20,7 +20,7 @@ sudo sed -i 's/password/${password}/g' /opt/lampp/htdocs/includes/dbconnection.p
 sudo sed -i.bak 's/localhost/${endpoint}/g' /opt/lampp/htdocs/admin/includes/dbconnection.php
 sudo sed -i 's/password/${password}/g' /opt/lampp/htdocs/admin/includes/dbconnection.php
 sudo chmod 777 /opt/lampp/etc/extra/httpd-xampp.conf
-sudo sed -i.bak 's/local/all granted/g' /opt/lampp/etc/extra/httpd-xampp.conf
+sudo sed -i.bak 's/local/ Require all granted/g' /opt/lampp/etc/extra/httpd-xampp.conf
 sudo chmod 755 /opt/lampp/etc/extra/httpd-xampp.conf
 sudo /opt/lampp/lampp restart
 sudo chmod 777 /opt/lampp/phpmyadmin/config.inc.php
