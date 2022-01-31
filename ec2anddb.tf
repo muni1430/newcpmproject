@@ -24,7 +24,6 @@ resource "aws_db_instance" "default" {
   password             = "muni1234"
   parameter_group_name = "default.mysql5.7"
   skip_final_snapshot  = true
-   skip_final_snapshot  = true
   publicly_accessible  = true
   vpc_security_group_ids = ["sg-01361c1aff01f515a"]
 }
