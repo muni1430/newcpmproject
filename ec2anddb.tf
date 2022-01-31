@@ -7,7 +7,7 @@ resource "aws_instance" "myec2" {
   instance_type = "t2.micro"
   subnet_id   = "subnet-03a83a9c26a79aeec"
   key_name = "newawskey"
-  user_data = templatefile("${path.module}/userdata.tftpl", {endpoint = aws_db_instance.default.endpoint,password = aws_db_instance.default.password})
+  user_data = templatefile("${path.module}/userdata.tf", {endpoint = aws_db_instance.default.endpoint,password = aws_db_instance.default.password})
   iam_instance_profile = "demo_full_access"
   security_groups = ["sg-01361c1aff01f515a"]
   tags = {
