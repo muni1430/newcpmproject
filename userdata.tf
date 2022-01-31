@@ -13,7 +13,7 @@ sudo /opt/lampp/lampp start
 sudo rm -rf /opt/lampp/htdocs/*
 sudo chmod 777 /opt/lampp/htdocs
 sudo git clone https://github.com/muni1430/newcpmproject.git
-sudo cp -r newcpmproject/Curfew e-Pass Management System Project/cpms/* /opt/lampp/htdocs
+sudo cp -r newcpmproject/cpms/SQL File/cpms/* /opt/lampp/htdocs
 sudo chmod 777 /opt/lampp/htdocs/includes/dbconnection.php
 sudo sed -i.bak 's/localhost/${endpoint}/g' /opt/lampp/htdocs/includes/dbconnection.php
 sudo sed -i 's/password/${password}/g' /opt/lampp/htdocs/includes/dbconnection.php
@@ -34,6 +34,6 @@ sudo echo '$cfg["Servers"][$i]["AllowNoPassword"] = true;' >> /opt/lampp/phpmyad
 sudo chmod 400 /opt/lampp/phpmyadmin/config.inc.php
 sudo /opt/lampp/lampp restart
 sudo apt install mysql-client-core-8.0
-mysql -h ${endpoint} -u admin -p cpms < /newcpmproject/Curfew e-Pass Management System Project/SQL\ File/cpms.sql
-mahesh8842
+mysql -h ${endpoint} -u admin -p cpms < /newcpmproject/cpms/SQL File/SQL\ File/cpms.sql
+muni1234
 
