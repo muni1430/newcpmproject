@@ -5,10 +5,10 @@ resource "aws_instance" "myec2" {
   depends_on = [aws_db_instance.default]
   ami           = "ami-04505e74c0741db8d"
   instance_type = "t2.micro"
+  availability_zone = "us-east-1c"
   subnet_id   = "subnet-03a83a9c26a79aeec"
   key_name = "newawskey"
   user_data = templatefile("${path.module}/userdata.tftpl", {endpoint = aws_db_instance.default.endpoint,password = aws_db_instance.default.password,address = aws_db_instance.default.address})
-  iam_instance_profile = "demo_full_access"
   security_groups = ["sg-01361c1aff01f515a"]
   tags = {
     Name = "Ec2tf"
