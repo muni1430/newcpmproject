@@ -1,9 +1,9 @@
 <?php 
 // DB credentials.
-define('DB_HOST','localost');
+define('DB_HOST','test-mysql-instance-finaltest1.cxnn8acptt6e.us-east-1.rds.amazonaws.com:3306');
 define('DB_USER','admin');
 define('DB_PASS','muni1234');
-define('DB_NAME','cpms');
+define('DB_NAME','test-mysql-instance-finaltest1');
 // Establish database connection.
 try
 {
